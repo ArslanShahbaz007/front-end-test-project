@@ -7,8 +7,8 @@ export const routes: Routes = [
     path: '',
     component: SidebarComponent,
     children: [
-      { path: 'home', component: DashboardComponent },
-      { path: '', redirectTo: '/home', pathMatch: 'full' }
+      { path: '', component: DashboardComponent }, // Default child route
+      { path: 'home', component: DashboardComponent }
     ]
   }
 ];
